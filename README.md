@@ -1,5 +1,5 @@
 ## 📽️ Demo Video
 
-Click the link below to watch the demo:
+Click the link below to watch the demo video of the project:
 
-🔗 [▶️ Watch Demo Video](https://github.com/abdulurooj/docspot-seamless-appointment-booking-for-health/blob/main/Video%20Demo/Doctor%20Appointment%20App/demo.mp4?raw=true)
+[▶️ Watch Demo Video](https://drive.google.com/file/d/1UTchmA9LV0Bx4raEkd13pa1IHsVtus11/view?usp=drivesdk)
