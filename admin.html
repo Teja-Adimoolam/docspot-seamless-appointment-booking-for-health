@@ -1,21 +1,132 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Admin Dashboard - DocSpot</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f7fa;
+      display: flex;
+    }
+
+    .sidebar {
+      width: 200px;
+      background-color: #3a3d41;
+      color: white;
+      height: 100vh;
+      padding: 20px;
+      position: fixed;
+    }
+
+    .sidebar h2 {
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar ul li {
+      padding: 12px 0;
+      cursor: pointer;
+    }
+
+    .sidebar ul li:hover {
+      background-color: #505457;
+      padding-left: 10px;
+      transition: 0.3s;
+    }
+
+    .main-content {
+      margin-left: 220px;
+      padding: 30px;
+      width: 100%;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #2d3748;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #e2e8f0;
+    }
+
+    td:last-child {
+      text-transform: capitalize;
+      font-weight: bold;
+      color: green;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Admin Dashboard</h1>
-    <p>Welcome, Admin! Manage doctor registrations, appointments, and users.</p>
-    <img src="admin_cartoon.jpg" alt="Admin Cartoon" class="banner">
+  <div class="sidebar">
+    <h2>MediCareBook</h2>
     <ul>
-      <li>✔ Approve doctors</li>
-      <li>✔ View all users</li>
-      <li>✔ Monitor appointment activity</li>
+      <li>Users</li>
+      <li>Doctors</li>
+      <li>Logout</li>
     </ul>
+  </div>
+
+  <div class="main-content">
+    <h1>Hi, Admin</h1>
+
+    <div class="card">
+      <h2>All Appointments for Admin Panel</h2>
+      <table>
+        <tr>
+          <th>Appointment ID</th>
+          <th>User Name</th>
+          <th>Doctor Name</th>
+          <th>Date</th>
+          <th>Status</th>
+        </tr>
+        <tr>
+          <td>#APPT001</td>
+          <td>Ali Khan</td>
+          <td>Dr. Roushan</td>
+          <td>2025-07-02</td>
+          <td>approved</td>
+        </tr>
+        <tr>
+          <td>#APPT002</td>
+          <td>Fatima</td>
+          <td>Dr. Shetty</td>
+          <td>2025-07-03</td>
+          <td>approved</td>
+        </tr>
+        <tr>
+          <td>#APPT003</td>
+          <td>Mohammed</td>
+          <td>Dr. Rahul</td>
+          <td>2025-07-04</td>
+          <td>approved</td>
+        </tr>
+      </table>
+    </div>
   </div>
 </body>
 </html>
