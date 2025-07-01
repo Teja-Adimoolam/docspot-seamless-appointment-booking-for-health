@@ -1,4 +1,3 @@
-
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -21,7 +20,10 @@ mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/docspot', {
 app.get("/", (req, res) => {
   res.send("DocSpot backend is running!");
 });
+const PORT = 5001;
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
 
 // Start server
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
